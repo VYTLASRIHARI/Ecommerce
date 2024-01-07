@@ -1,0 +1,563 @@
+import React from 'react'
+import ReactStars from "react-rating-stars-component";
+import { Link, useLocation } from 'react-router-dom';
+import prodcompare from '../images/prodcompare.svg';
+import wish from '../images/wish.svg';
+import wishlist from '../images/wishlist.svg';
+import watch from'../images/watch.jpg';
+import tab from '../images/tab.jpg'
+import addcart from '../images/add-cart.svg'
+import view from'../images/view.svg'
+import watch1 from'../images/watch1.jpg'
+import tab5 from'../images/tab5.jpg'
+import tab6 from'../images/tab6.jpg'
+import speaker from'../images/speaker.jpg'
+import mini1 from '../images/mini1.jpg'
+import phone1 from '../images/phone1.jpg'
+import phone2 from '../images/phone2.jpg'
+import camera from '../images/camera.jpg'
+import photo from '../images/photo.jpg'
+import acc from '../images/acc.jpg'
+import homeapp from '../images/homeapp.jpg'
+import laptop2 from'../images/laptop2.png'
+import laptop3 from'../images/laptop3.jpg'
+import tab2 from'../images/tab2.jpg'
+import tab3 from'../images/tab3.jpg'
+import samsung1 from'../images/samsung1.png'
+import samsung2 from'../images/samsung2.jpg'
+import main1 from'../images/headphone.jpg'
+import main2 from'../images/main-banner.jpg'
+const ProductCard1 = (props) => {
+  const {grid}= props;
+  console.log(grid);
+  let location =useLocation();
+ 
+  return (
+    <>
+      <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={watch} className='img-fluid '  width='150px'
+          height='150px'alt='product'/>
+          <img src={watch1} className='img-fluid ' width='110px'
+          height='110px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Watches for Students in Mutlple colors
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+          
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={tab5} className='img-fluid' width='120px' height='120px' alt='product'/>
+          <img src={tab6} className='img-fluid' width='110px'
+          height='110px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Samsung Galaxy Note 10 Tablets
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={speaker} className='img-fluid 'width='130px' height='130px' alt='product'/>
+          <img src={mini1} className='img-fluid ' width='150px'
+          height='150px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Best Room-filling Sound  Speakers 
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={phone1} className='img-fluid mb-0' alt='product'/>
+          <img src={phone2} className='img-fluid m-2 mt-0 mb-0' width='130px'
+          height='130px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Apple Mobiles Multi-color for students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+          
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+   <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={photo} className='img-fluid ' width='130px'
+          height='130px'alt='product'/>
+          <img src={camera} className='img-fluid ' width='130px'
+          height='130px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Best Camera  low-price of students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={acc} className='img-fluid 'width='120px' height='120px'alt='product'/>
+          <img src={homeapp} className='img-fluid ' width='120px'
+          height='120px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Bluetooth headphones for students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={camera} className='img-fluid ' width='130px'
+          height='130px'alt='product'/>
+          <img src={photo} className='img-fluid ' width='130px'
+          height='130px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Best Camera for low-price for students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={homeapp} className='img-fluid 'width='120px' height='120px'alt='product'/>
+          <img src={phone2} className='img-fluid ' width='120px'
+          height='120px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Bluetooth headphones for students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={main1} className='img-fluid  m-2' width='140px'
+          height='140px'alt='product'/>
+          <img src={main2} className='img-fluid ' width='210px'
+          height='210px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Best headphones  low-price students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={samsung1} className='img-fluid 'width='200px' height='200px'alt='product'/>
+          <img src={samsung2} className='img-fluid ' width='200px'
+          height='200px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Floded Samsung Mobile for students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={tab2} className='img-fluid mb-3' width='180px'
+          height='180px'alt='product'/>
+          <img src={tab3} className='img-fluid  mb-3' width='180px'
+          height='180px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Best tablets for Students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    <div className={` ${location.pathname == "/product" ? `gr-${grid}` :"col-2"} `}>
+      <Link to='product/:id'className='product-card position-relative'>
+        <div className="wishlist-icon position-absolute">
+          <button className='border-0 bg-transparent'><img src={wish} alt=''/></button>
+        </div>
+        <div className="product-image">
+          <img src={laptop2} className='img-fluid  'width='160px' height='160px'alt='product'/>
+          <img src={laptop3} className='img-fluid ' width='180px'
+          height='180px' alt='product'/>
+        </div>
+        <div className="product-details">
+          <h6 className="brand">Havels </h6>
+          <h5 className="product-title"> 
+           Best Laptops for students
+          </h5>
+          <ReactStars
+             count={5}
+             size={24}
+             value='3'
+             edit={false}
+             activeColor="#ffd700"
+           />
+           <p className={`description ${grid === 12 ? "d-block" :"d.none"}`}>
+           
+          
+           </p>
+        <p className='price'>$100</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className='d-flex flex-column gap-20'>
+            <Link>
+            <img src={prodcompare} alt='procompare'/>
+            </Link>
+            <Link>
+            <img src={view} alt='view'/>
+            </Link>
+            <Link>
+            <img src={addcart} alt='addcart'/>
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </div>
+    
+    </>
+  )
+}
+
+export default ProductCard1
